@@ -26,17 +26,15 @@ In this repo in the `todomvc` folder you'll find three implementations of TodoMV
 
 Using tools like Vagrant and Docker, set up a virtual or containerized environment that runs the application that consists of at least 2 logical machines/containers talking to one another: one hosting the application server and one hosting the database. For the database, you can choose to use either MongoDB (for the node.js project) or MySQL or PostgreSQL for the Rails or Django projects. Feel free to configure or customize the application and database to suit your needs.
 
-In addition to getting the basic system running, include one or more extras using your skills and creativity. This is your chance to blow us away!
+In addition to getting the basic system running, include some more stuff to showcase your skill and creativity. This is your chance to blow us away!
 
 Some ideas:
 
-- A basic monitoring setup for health checks using the monitoring tool of your choice.
-
-- A basic graphing setup to visually monitor the state of the system.
+- A basic monitoring/alerting setup.
 
 - A simple deployment process for new code.
 
-- Anything else you think would showcase your abilities as an operations engineer.
+- Anything else you think would showcase your abilities as an operations engineer. Been wanting to try a new tool, scripting language, or library? Go for it!
 
 ## Deliverable
 
