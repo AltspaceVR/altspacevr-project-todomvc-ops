@@ -13,7 +13,7 @@ We use this project to get a sense of your operational chops and what kinds of a
 - Are the scripts and the overall project well organized and clean?
 - Are the extras bits included set up properly? Are they useful, relevant, or just plain cool? 
 
-This project should take approximately 5-15 hours to complete, and should completed within a week of forking this repo.
+This project should take approximately 5-15 hours to complete.
 
 To work on the project:
 
