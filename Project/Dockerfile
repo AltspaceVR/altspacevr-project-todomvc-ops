@@ -4,14 +4,19 @@ FROM python:2.7
 RUN apt-get -y update \
  && apt-get -y autoremove 
 
-#entrypoint script
+#copy to container fs
 COPY app-entrypoint.sh /
+COPY uwsgi.ini /tmp/uwsgi.ini
+COPY uwsgi_params /app/
+COPY django  /app/
 
-# python libs
-ADD django/requirements.txt /tmp/
-RUN pip install -r /tmp/requirements.txt
-RUN chmod +x /app-entrypoint.sh
+#install libs and sort perms
+RUN pip install -r /app/requirements.txt
+RUN chmod +x /app-entrypoint.sh 
 
-ADD django  /app/
+
+VOLUME "/app"
 
 WORKDIR /app
+
+CMD ["/app-entrypoint.sh"]

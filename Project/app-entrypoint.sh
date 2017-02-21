@@ -1,7 +1,6 @@
 #!/bin/bash
+sleep 15
 python manage.py syncdb --noinput
-python manage.py migrate --noinput
 python manage.py collectstatic --noinput
-python manage.py compress --force
 
-python manage.py runserver 0.0.0.0:8000
+/usr/local/bin/uwsgi /tmp/uwsgi.ini --uid www-data --gid www-data
